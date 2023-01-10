@@ -1,0 +1,51 @@
+{
+  "background_color": "#ffffff",
+  "description": "Starbucks Siren order page",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "Starbucks",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "Starbucks",
+  "start_url": "/",
+  "theme_color": "#ffffff",
+  "categories": [
+    "lifestyle"
+  ],
+  "screenshots": [],
+  "icons": [
+    {
+        "src" : "logo_icon2.png",
+        "sizes" : "600x600",
+        "type" : "image/png"
+    }
+  ],
+  "shortcuts": [
+    {
+        "name" : "Chrome으로 열기",
+        "short_name" : "Open By Chrome",
+        "description" : "Chrome으로 열기",
+        "url" : "./",
+        "icons" : [
+            {
+              "src" : "logo_icon2.png",
+              "sizes" : "600x600",
+              "type" : "image/png"
+          }
+        ]
+    },
+    {
+        "name" : "VSCode으로 열기",
+        "short_name" : "Open By VSCodee",
+        "description" : "VSCode으로 열기",
+        "url" : "./",
+        "icons" : [
+            {
+              "src" : "logo_icon2.png",
+              "sizes" : "600x600",
+              "type" : "image/png"
+          }
+        ]
+    }
+  ]
+}

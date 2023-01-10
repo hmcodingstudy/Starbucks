@@ -1,0 +1,54 @@
+.title{
+    display: block;
+    font-weight: 600;
+    font-size: 28px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+img{
+    display: block;
+    margin: 120px auto 30px;
+}
+
+.text2{
+    color:gray
+}
+
+.text1,.text2{
+    display: block;
+    text-align: center;
+    line-height: 30px;
+    font-size: 18px;
+}
+
+.btnWrap{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.goToHome,.goToMyorder{
+    border-radius: 30px;
+    height:40px;
+    font-size:17px;
+    font-weight: 600;
+    width:80%;
+    max-width: 500px;
+    margin:10px auto 0;
+    cursor: pointer;
+    display: block;
+}
+
+.goToHome{
+    border:1px solid rgb(14, 126, 42);
+    color:rgb(14, 126, 42);
+    background: white;
+}
+
+.goToMyorder{
+    border:1px solid rgb(14, 126, 42);
+    color:white;
+    background: rgb(14, 126, 42);
+}

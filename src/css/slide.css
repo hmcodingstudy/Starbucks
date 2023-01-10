@@ -1,0 +1,109 @@
+
+
+.slideBtn {
+  position: absolute;
+  background: none;
+  border: 1px solid rgb(156, 156, 156);
+  border-radius: 50%;
+  /* color: white; */
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  right: 8%;
+  bottom: 41%;
+  color: rgb(156, 156, 156);
+  font-size: 17px;
+  background-color: yellow;
+  /* z-index: -1; */
+}
+
+.effect{
+    animation: 2s linear wave
+}
+
+.effect2{
+  animation: 2s linear wave2
+}
+
+.effect3{
+  animation: 2s linear wave3
+}
+
+.effect3{
+  animation: 2s linear wave4
+}
+
+.hiddenBtn{
+  border:none;
+  background:none;
+  border-radius: 50%;
+  position:absolute;
+  width:90px;
+  height:90px;
+  margin:30% auto 0;
+  right:100px;
+  bottom:55%;
+  /* opacity:0; */
+  z-index:-2;
+}
+
+@keyframes wave{
+  from{ 
+    transform: scale(1);
+    /* width: 100% */
+    opacity: 1;
+ }
+ to{
+    transform: scale(50);
+    /* width: 300%; */
+    opacity: 1;
+}
+}
+
+@keyframes wave2{
+  from{ 
+    transform: scale(1);
+    /* width: 100% */
+    opacity: 1;
+ }
+ to{
+    transform: scale(50);
+    /* width: 300%; */
+    opacity: 1;
+}
+}
+
+@keyframes wave3{
+  from{ 
+    transform: scale(1);
+    /* width: 100% */
+    opacity: 1;
+ }
+ to{
+    transform: scale(50);
+    /* width: 300%; */
+    opacity: 1;
+}
+}
+
+@keyframes wave4{
+  from{ 
+    transform: scale(1);
+    /* width: 100% */
+    opacity: 1;
+ }
+ to{
+    transform: scale(50);
+    /* width: 300%; */
+    opacity: 1;
+}
+}
+
+@media (max-width: 768px) {
+  .slideBtn{
+    /* right:45px; */
+    right:8%;
+
+    bottom: 27%;
+}
+}

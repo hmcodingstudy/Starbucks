@@ -1,0 +1,44 @@
+.body {
+  background-color: white;
+  height: 100vh
+}
+
+.logo {
+  background: url(../images/logo.png) no-repeat;
+  width: 75px;
+  height: 75px;
+  text-indent: -9999px;
+  display: block;
+  margin: 80px auto 40px;
+}
+
+.loginForm {
+  width: 80%;
+  max-width: 400px;
+  margin: auto
+}
+
+.google {
+  background: url(../images/google_login.png) no-repeat;
+  width: 200px;
+  height: 48px;
+  text-indent: -9999px;
+  margin: auto;
+  display: block;
+  cursor: pointer;
+}
+
+.inputEmail {
+  margin-bottom: 10px;
+}
+
+.inputPwd {
+  margin-bottom: 25px;
+}
+
+.error {
+  display: block;
+  margin-top: 20px;
+  color: red;
+  text-align: center;
+}

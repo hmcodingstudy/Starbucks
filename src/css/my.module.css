@@ -1,0 +1,130 @@
+/* orderState */
+
+.orderState {
+  display: flex;
+  flex-direction: row;
+  margin: 20px auto 0;
+  width: 70%;
+}
+
+.orderState > div {
+  width: calc(100% / 3);
+}
+
+.now {
+  animation: 1s ease-in-out infinite on;
+}
+
+@keyframes on {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: rgb(255, 2, 2);
+  }
+}
+
+.orderState > div > span {
+  display: block;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* orderPdtWrap */
+.orderPdtWrap {
+  border: 1px solid lightgray;
+  padding-bottom: 10px;
+}
+
+.title2 {
+  display: block;
+  color: inherit;
+  text-align: left;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 20px 30px;
+}
+
+.orderPdt1 {
+  padding: 20px 0;
+  display: flex;
+}
+
+.orderPdtImg {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 30px;
+  min-width: 100px;
+}
+
+.orderPdtTextWrap {
+  width: 100%;
+  margin-right: 23px;
+}
+
+.kTitle {
+  font-weight: bold;
+  margin-bottom: 8px;
+  display: block;
+  font-size: 16px;
+}
+
+.eTitle {
+  display: block;
+  color: gray;
+  margin-bottom: 15px;
+  font-size: 13px;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(71, 71, 71);
+  margin-bottom: 15px;
+  font-size: 14px;
+  justify-content: left;
+}
+
+.quantityWrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price {
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .orderState {
+    display: flex;
+    flex-direction: row;
+    margin: 20px auto 0;
+    width: 55%;
+  }
+
+  .orderPdt1 {
+    width: calc(100% - 160px);
+    max-width: 700px;
+    margin: auto;
+    border-bottom: 1px solid lightgray;
+  }
+
+  .orderPdtWrap {
+    margin: auto;
+    border: none;
+
+    /* min-width: 730px; */
+  }
+  .orderPdtTextWrap {
+    width: 82%;
+    /* min-width: 700px; */
+  }
+
+  .title2 {
+    font-size: 22px;
+    text-align: center;
+  }
+}

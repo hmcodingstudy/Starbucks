@@ -1,0 +1,209 @@
+button {
+  padding: 0;
+  margin: 0;
+}
+
+/* selectMobile slide event*/
+.selectMobile {
+  display: none;
+  position: absolute;
+  background: white;
+  width: 100%;
+  height: 80%;
+  padding-top: 20px;
+  border-radius: 30px;
+  box-shadow: 0px -5px 5px -1px rgba(177, 177, 177, 0.7);
+  box-sizing: border-box;
+  top: 20%;
+  /* opacity:0; */
+}
+
+.active {
+  position: absolute;
+  background: white;
+  width: 100%;
+  height: 80%;
+  padding-top: 20px;
+  border-radius: 30px;
+  box-shadow: 0px -5px 5px -1px rgba(177, 177, 177, 0.7);
+  box-sizing: border-box;
+  top: 20%;
+  display: block;
+  animation: move 0.4s linear;
+}
+
+@keyframes move {
+  from {
+    top: 70%;
+  }
+
+  to {
+    top: 20%;
+  }
+}
+
+/* 퍼스널 옵션 슬라이드 이벤트 */
+.optionListMobile {
+  display: none;
+  position: absolute;
+  background: rgb(240, 240, 240);
+  width: 100%;
+  height: 71%;
+  box-sizing: border-box;
+  top: 29%;
+}
+
+.active2 {
+  position: absolute;
+  background: rgb(240, 240, 240);
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  top: 70px;
+  animation: move2 0.3s linear;
+}
+
+@keyframes move2 {
+  from {
+    top: 70%;
+  }
+
+  to {
+    top: 70px;
+  }
+}
+
+/* orderBtnWrap2 슬라이드 이벤트*/
+.orderBtnWrap2 {
+  display: none;
+  width: 100%;
+  height: 120px;
+  background: white;
+  padding-top: 10px;
+  box-sizing: border-box;
+  position: fixed;
+  z-index: 5;
+  top: calc(100% - 120px);
+  box-shadow: 0px -5px 10px -1px rgba(236, 236, 236, 0.7);
+}
+
+.active3 {
+  display: block;
+  width: 100%;
+  height: 120px;
+  background: white;
+  padding-top: 10px;
+  box-sizing: border-box;
+  position: fixed;
+  z-index: 5;
+  top: calc(100% - 120px);
+  box-shadow: 0px -5px 10px -1px rgba(236, 236, 236, 0.7);
+  animation: move3 0.5s linear;
+}
+
+@keyframes move3 {
+  from {
+    top: 100%;
+  }
+
+  to {
+    top: calc(100% - 120px);
+  }
+}
+
+/* 장바구니 완료 메세지 */
+.cartMessage {
+  display: none;
+  width: 100%;
+  height: 120px;
+  background: white;
+  padding: 20px;
+  box-sizing: border-box;
+  position: fixed;
+  z-index: 6;
+  top: calc(100% - 120px);
+  box-shadow: 0px -5px 10px -1px rgba(236, 236, 236, 0.7);
+  flex-direction: column;
+}
+
+.complete {
+  display: block;
+  width: 100%;
+  height: 120px;
+  background: white;
+  padding: 20px;
+  box-sizing: border-box;
+  position: fixed;
+  z-index: 6;
+  top: calc(100% - 120px);
+  box-shadow: 0px -5px 10px -1px rgba(236, 236, 236, 0.7);
+  flex-direction: column;
+  animation: activeCartMsg 0.4s linear;
+}
+
+@keyframes activeCartMsg {
+  from {
+    top: 100%;
+  }
+
+  to {
+    top: calc(100% - 120px);
+  }
+}
+
+@media (min-width: 769px) {
+  .orderBtnWrap2 {
+    display: block;
+  }
+
+  .changeBgBlue {
+    background-color: #a6cac8;
+    display: flex;
+  }
+
+  .changeBgGreen {
+    background-color: #1b3c35;
+    display: flex;
+  }
+}
+
+/* my starbucks */
+.orderStateText {
+  background-color: lightgray;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  height: 100px;
+  line-height: 100px;
+}
+
+.step1,
+.step2,
+.step3 {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border: 3px solid green;
+  border-radius: 50%;
+  color: green;
+  font-size: 17px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 28px;
+  margin: auto;
+  box-sizing: content-box !important
+}
+
+.now {
+  animation: 1s ease-in-out infinite on;
+}
+
+@keyframes on {
+  from {
+    background-color: white;
+  }
+
+  to {
+    background-color: tomato;
+  }
+}

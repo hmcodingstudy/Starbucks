@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500&display=swap");
+
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  /* overflow: hidden;  */
+  /* ↑스크롤바 숨김 */
+}
+
+body {
+  height: 100%;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #333;
+  background: #f6f5ef;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+button > a {
+  display: block;
+  width: 100%;
+}
+
+.hiddenHeader {
+  height: 80px;
+  top: 0;
+  width: 100%;
+  position: static;
+}
+
+/* pcHeader */
+.pcHeader {
+  height: 80px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #f6f5ef;
+  justify-content: space-between;
+  z-index: 9;
+}
+
+.pcHeader .logo {
+  width: 75px;
+  height: 75px;
+  margin: 10px 0 0 20px;
+}
+
+.pcHeader .logoWrap {
+  display: flex;
+}
+
+.pcHeader .logo {
+  background: url(../images/logo.png) no-repeat;
+  width: 75px;
+  height: 75px;
+  background-size: 60px;
+  text-indent: -9999px;
+  display: block;
+}
+
+.pcHeader .menu {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 50px;
+  line-height: 80px;
+  width: 100%;
+}
+
+.pcHeader .order {
+  margin-right: 30px;
+}
+
+.pcHeaderCartBtn {
+  font-size: 25px;
+  box-sizing: border-box;
+  cursor: pointer;
+  right: 0;
+  margin-top: 29px;
+}
+
+.mobileHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrowLeft {
+  font-size: 26px;
+  margin-top: 21px;
+  padding-left: 15px;
+  cursor: pointer;
+}
+
+.headerCartBtn {
+  font-size: 25px;
+  margin-top: 21px;
+  padding-right: 12px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.mobileHeader .logoWrap {
+  width: 250px;
+  height: 33px;
+  margin: 20px auto;
+}
+
+.mobileHeader .logo {
+  background: url(../images/logo2.png) no-repeat;
+  height: 54px;
+  background-size: 250px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .hiddenHeader,
+  .mobileHeader {
+    height: 70px;
+  }
+
+  /* mobileHeader */
+  .mobileHeader {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    top: 0;
+    position: fixed;
+    z-index: 9;
+    background: #f6f5ef;
+  }
+
+  .mobileHeader > a > i {
+    font-size: 26px;
+    margin-top: 21px;
+    padding-left: 15px;
+    cursor: pointer;
+  }
+
+  .mobileHeader .headerCartBtn > i {
+    font-size: 25px;
+    margin-top: 21px;
+    padding-right: 12px;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+
+  .mobileHeader .logoWrap {
+    width: 250px;
+    height: 33px;
+    margin: 20px auto;
+  }
+
+  .mobileHeader .logo {
+    background: url(../images/logo2.png) no-repeat;
+    height: 54px;
+    background-size: 250px;
+  }
+}

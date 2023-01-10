@@ -1,0 +1,217 @@
+select:focus {
+  outline: none;
+}
+
+.h3 {
+  text-align: center;
+  font-size: 23px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.title {
+  background: lightgray;
+  padding: 20px;
+}
+
+.title>select {
+  background: none;
+  border: none;
+  border-bottom: 1px solid black;
+  width: 70%;
+  height: 25px;
+  font-size: 15px;
+  text-align: center;
+  display: block;
+  margin: auto;
+}
+
+.title2 {
+  display: block;
+  color: inherit;
+  text-align: left;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 20px 30px;
+  border-bottom: 1px solid lightgray;
+}
+
+.title2TextWrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.deleteAll {
+  font: inherit;
+  color: inherit;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.deleteAll:hover {
+  color: tomato
+}
+
+.zeroMsg {
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.cartPdt {
+  padding: 20px 0;
+  border: 1px solid lightgray;
+  border-top: none;
+  display: flex;
+}
+
+.imgWrap {
+  width: 100px;
+  height: 100px;
+  margin: 0 30px;
+}
+
+.cartPdtImg {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-size: 100px;
+}
+
+.cartPdtWrap {
+  padding-bottom: 120px;
+}
+
+.cartPdtTextWrap {
+  padding-right: 50px;
+  width: 100%;
+  position: relative;
+}
+
+.deleteBtn {
+  color: gray;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  right: 15px;
+  margin-top: -5px;
+}
+
+.kTitle {
+  font-weight: bold;
+  margin-bottom: 8px;
+  display: block;
+  font-size: 16px;
+}
+
+.eTitle {
+  display: block;
+  color: gray;
+  margin-bottom: 15px;
+  font-size: 13px;
+}
+
+.options>span {
+  display: block;
+}
+
+.options>span:last-child {
+  font-size: 16px;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(71, 71, 71);
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+/* quantityWrap */
+.plus,
+.minus {
+  color: gray;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.quantity {
+  line-height: 27px;
+}
+
+.minus,
+.quantity {
+  margin-right: 17px;
+}
+
+.plus {
+  line-height: 21px;
+}
+
+/* footer */
+.orderBtnWrap {
+  width: 100%;
+  height: 120px;
+  background: white;
+  box-sizing: border-box;
+  position: fixed;
+  z-index: 6;
+  top: calc(100% - 120px);
+  box-shadow: 0px -5px 10px -1px rgba(236, 236, 236, 0.7);
+}
+
+.amount {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.orderBtn {
+  border-radius: 30px;
+  background: rgb(14, 126, 42);
+  width: 95%;
+  height: 45px;
+  display: block;
+  margin: auto;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.msg {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 170px;
+}
+
+/* 반응형*/
+
+@media (min-width: 769px) {
+  .title>select {
+    max-width: 500px;
+  }
+
+  .cartPdtWrap {
+    width: 70%;
+    margin: 0 auto;
+    max-width: 600px;
+  }
+
+  .cartPdt {
+    border: none;
+  }
+
+  .amount {
+    margin: auto;
+    width: 755px;
+  }
+
+  .orderBtn {
+    width: 755px;
+  }
+}
